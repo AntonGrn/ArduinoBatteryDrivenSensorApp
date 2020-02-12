@@ -16,7 +16,7 @@ float batteryVolt;
 float batteryPerc;
 
 volatile boolean toggle = false; //button pressed status
-volatile boolean displayTemp = true; // Display temperature OR battery power  -- NEED TO BE VOLATILE??
+boolean displayTemp = true; // Display temperature OR battery power
 unsigned long lastIntervalTime = 0;
 unsigned long lastDebounceTime = 0;
 const long interval = 30000; // Time interval for updating sensor values
